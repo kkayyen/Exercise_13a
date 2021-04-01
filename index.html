@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DON BOSCO BAGUIO</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;}
+body{
+    background: scroll rgb(96, 96, 165);
+}
+nav {
+    overflow: hidden;
+    background-color: rgb(10, 10, 10);
+}
+nav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+nav a:hover {
+    background-color: rgb(197, 36, 36);
+    color: rgb(248, 240, 240);
+}
+nav a.active {
+background-color: #4CAF50;
+color: white;
+}
+
+header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    padding-left: 10%;
+    padding-right: 5%;
+    margin: 0;
+    background: rgba(44, 48, 44, 0.6);
+    text-align: center ;
+}
+.logo {
+    position: relative;
+    width: 6%;
+    padding-right: 0px;
+}
+header h1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3d3da;
+    font-size: 3vw;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+}
+header li:hover{
+    background-color: #717171;
+    
+}
+header ul li {
+    position: relative;
+    list-style: none;
+    margin-left: 5%;
+}
+header ul li a{
+    color: rgb(245, 248, 241);
+    text-decoration: none;
+    
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+section {
+max-width: 100%;
+position: relative;
+margin: auto;
+
+}
+section img{
+    width: 100%;
+
+}
+.mySlides {display: none
+}
+img {
+vertical-align: middle;
+}
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.7);
+}
+.text {
+color: #1804ce;
+font-size: 5vw;
+padding-left: 5%;
+position: absolute;
+bottom: 60%;
+width: 100%;
+text-align: center;
+}
+.text2 {
+    color: #f2f1f5;
+    font-size: 2.2vw;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 45%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    }
+#dots {
+    text-align: center;
+}
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+background-color: #717171;
+}
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+article{
+    padding: 0;
+    margin: 2%;
+    text-align:center!important;
+    background: rgb(3, 3, 95);
+    color: white;
+    font-size: 1.3vw;
+}
+article img{
+    width: 20%;
+}
+article a:hover{
+    background-color: #717171;  
+}
+.box {
+    float: left;
+    width: 25%;
+    border: solid 10px;
+    height: 200px;
+    padding-top: 4%;
+} 
+.box:hover{
+    background-color: #717171;
+}
+article::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+aside{
+    margin: 2%;
+    padding-bottom: 0;
+    
+}
+h2 {
+    font-size: 2vw;
+}
+#aside {
+    border: 2px solid;
+    width: 100%;
+    padding: 0;
+    left: 0;
+    top: 0;
+    background: lemonchiffon;
+    text-align: center;
+
+}
+#aside img{
+    width: 16%;
+    float: left;
+    padding: 1%;
+}
+#aside p{
+    padding: 4%;
+    font-size: 1.7vw;
+}
+footer{
+    margin: 2%;
+}
+h3{
+    font-size: 1.8vw;
+}
+#address p{
+    font-size: 1.2vw;
+
+}
+#address {
+    float:left;
+}
+#media {
+    padding-right: 4%;
+}
+#media img{
+    width: 4%;
+    float: right;
+    margin-right: 1%;
+}
+#media::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+#disclaimer{
+    font-size: 1vw;
+}
+@media screen and (max-width:880px) {
+    .box{
+        width:50%;
+}
+}
+@media screen and (max-width:320px) {
+    .box{
+        width:100%;}
+    }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a class="active">CONTACT</a>
+            <a>LOGIN</a>
+            <a>LANGUAGE</a>
+            <a>SEARCH</a>
+        </nav>
+        
+        <header>
+            <img src="images/logo.png" class="logo">
+            <h1><b>DON BOSCO HIGH SCHOOL</b></h1>
+            <ul>
+                <li><a>ABOUT</a></li>
+                <li><a>SCHOOL</a></li>
+                <li><a>STUDENTS</a></li>
+                <li><a>PARENTS & COMMUNITY</a></li>
+            </ul>
+        </header>
+        <section>
+        <div class="mySlides fade">
+            <img src="images/2.jpg">
+            <div class="text"><b>WELCOME TO <br> DON BOSCO</b></div>
+            <div class="text2">Be Honest●Be Clean●Be Kind●Be Self-Disciplined●Be Hard-Working</div>
+            </div>
+            
+        <div class="mySlides fade">
+            <img src="images/8.jpg" width="100%" height="100%">
+        <div class="text"><b>WE TEACH AS ONE! <br> WE LEAD AS ONE!</b></div>
+        <div class="text2"></div>
+        </div>
+            
+        <div class="mySlides fade">
+            <img src="images/9.jpg">
+            <div class="text"></div>
+            <div class="text2"></div>
+        </div>
+            
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        
+        <br>
+        <div id="dots">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        </section>
+
+        <article>  
+            <div class="box">
+                <img src="images/enrollyourchild.png">
+                <br><br>
+                <a>ENROLL YOUR CHILD NOW</a>
+            </div>
+            <div class="box">
+                <img src="images/careers.jpg">
+                <br><br>
+                <a>CAREERS</a>
+            </div>
+            <div class="box">
+                <img src="images/activities.png">
+                <br><br>
+                <a>EXTRA-CURRICULAR ACTIVITIES</a>
+            </div>
+            <div class="box">
+                <img src="images/calendar.png">
+                <br><br>
+                <a>CALENDAR</a>
+            </div>
+        </article>
+        <aside>
+        <h2>NEWS AND EVENTS</h2>
+        <section id="aside">
+            <img src="images/poster.jpg">
+            <p>Congratulations to Ms. Jessica Estrada for representing St. John Bosco Parish/ Don Bosco in the Poster-Making Contest. <br> Organized by the commission on youth with the theme: "God's Words Restores, the continuance of the National Bible Month Celebration".
+                <br> Held last February 28, 2021. 
+                <br> The Bosconian Family is proud of your achievement👏👏👏 Keep up the good work! 💌  
+                <br> Entry # 15- 2nd place 😊🥈👏</p>
+        </section>
+        </aside>
+        <hr>
+
+        <footer>
+        <section id="address">
+            <h3>DON BOSCO HIGH SCHOOL</h3>
+            <p>57 MANUEL ROXAS, BAGUIO CITY, 2602</p>
+            <p>PHONE: 442-87-58</p>
+            <p>OFFICE HOURS: M-F 8:00 AM - 5:00 PM</p>
+        </section>
+        <section id="media">
+            <img src="images/mail.png">
+            <img src="images/tweeter.png">
+            <img src="images/facebook.png">
+        </section>
+        <br><br>
+        <section id="disclaimer">
+            <a>Disclaimer | Site Map</a>
+        </section>
+        </footer>
+
+        <script>
+        var slideIndex = 1;
+            showSlides(slideIndex);
+            
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+         }
+            
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+    </body>
+    </html>
